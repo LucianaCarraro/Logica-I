@@ -1,0 +1,28 @@
+<meta charset"UTF-8">
+<script>
+	//adicionei funções para ficar mais bonito
+	function pulaLinha() {
+	
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		pulaLinha();
+	}
+	
+	//atividade para calcular as parcelas de Tânia.
+	var parcelas = [10.40, 40.00, 100.18, 200];
+	
+	//estava escrito "lenght" e não "length", que é o correto.
+	//também modifiquei "i = i + 1" por "i++"
+	
+	for(var i = 0; i < parcelas.length; i++) {
+	//adicionei "R$" para ficar mais bonito
+		mostra("R$ " + parcelas[i]);
+	}
+	
+	document.write("FIM");
+	
+	</script>
